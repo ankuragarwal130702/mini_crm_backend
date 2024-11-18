@@ -19,7 +19,10 @@ const communcationLogConsumer = require("./src/recievers/CommunicationLog.sub")
 const Receive = require("./src/rabbit/Recieve.class");
 
 const app = express();
-app.use(cors())
+app.use(cors(
+  {origin:'*'
+  }
+));
 app.use(bodyParser.json());
 app.use(morgan('dev'))
 
