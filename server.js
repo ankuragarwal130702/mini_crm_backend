@@ -20,7 +20,7 @@ const Receive = require("./src/rabbit/Recieve.class");
 
 const app = express();
 app.use(cors(
-  {origin:'*'
+  {origin:'*',
   }
 ));
 app.use(bodyParser.json());
